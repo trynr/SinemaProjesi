@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "304498583779",
+    "firebase_url": "https://sinemaprojesi-8681b.firebaseio.com",
+    "project_id": "sinemaprojesi-8681b",
+    "storage_bucket": "sinemaprojesi-8681b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304498583779:android:d2e3303f416f74cf323dd6",
+        "android_client_info": {
+          "package_name": "com.example.sinemaprojesi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304498583779-15dr8ver313ha761m8n44j9g1mgvkgf7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sinemaprojesi",
+            "certificate_hash": "88312e6f0bd81893323c2c797bb6c2ab25091224"
+          }
+        },
+        {
+          "client_id": "304498583779-hj3d47gvfg1u4dsauc8m9tq54hoqn696.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBszb1MAKy3B9bhkwtg423ieBPbKYQ6Kbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304498583779-hj3d47gvfg1u4dsauc8m9tq54hoqn696.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
