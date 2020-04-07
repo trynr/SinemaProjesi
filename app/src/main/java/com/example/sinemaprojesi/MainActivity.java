@@ -1,17 +1,22 @@
 package com.example.sinemaprojesi;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ScrollView;
 
 import com.example.sinemaprojesi.Adapters.FilmsAdapter;
 import com.example.sinemaprojesi.Models.Film;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -30,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
     FirebaseUser user;
+    FirebaseAuth.AuthStateListener authStateListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +49,39 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater m1 = getMenuInflater();
+        m1.inflate(R.menu.menu, menu);
+
+        MenuItem item = menu.findItem(R.id.logout_button);
+
+        item.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                auth.signOut();
+                Intent intent = new Intent(MainActivity.this, FirstLoginActivity.class);
+                startActivity(intent);
+
+                return false;
+            }
+        });
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+
     public void define(){
+        FirebaseApp.initializeApp(this);
+
         auth = FirebaseAuth.getInstance();
         user = auth.getCurrentUser();
+        authStateListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+
+            }
+        };
 
         filmGenresLayout = findViewById(R.id.filmGenresLayout);
         actionMoviesRecView = findViewById(R.id.actionMoviesRecView);
@@ -86,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void check(){
         if(user == null){
-            Intent intent = new Intent(MainActivity.this, FirstLoginActivity.class);
+            Intent intent = new Intent(MainActivity.this, AdminOrUserActivity.class);
 
             startActivity(intent);
 

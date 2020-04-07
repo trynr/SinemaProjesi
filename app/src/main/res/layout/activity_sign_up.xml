@@ -6,14 +6,14 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_height="match_parent"
-    tools:context=".FirstLoginActivity">
+    tools:context=".SignUpActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:id="@+id/state_tv"
         android:layout_marginBottom="40dp"
         android:gravity="center"
-        android:text="Login Activity"
+        android:text="Kayıt Ekranı"
         android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="@color/White"
@@ -23,11 +23,11 @@
         android:layout_width="match_parent"
         android:background="@color/White"
         android:layout_margin="12dp"
-        android:padding="5dp"
-        android:textColorHint="@color/Gray"
-        android:hint="Email"
         android:textColor="@color/Black"
-        android:id="@+id/email_et"
+        android:padding="5dp"
+        android:hint="Adınız"
+        android:textColorHint="@color/Gray"
+        android:id="@+id/name_et"
         android:layout_height="wrap_content"/>
 
     <EditText
@@ -35,25 +35,35 @@
         android:background="@color/White"
         android:layout_margin="12dp"
         android:padding="5dp"
-        android:textColor="@color/Black"
         android:textColorHint="@color/Gray"
-        android:hint="Parola"
-        android:id="@+id/password_et"
+        android:hint="Email"
+        android:id="@+id/email_et2"
+        android:textColor="@color/Black"
         android:layout_height="wrap_content"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@color/White"
+        android:layout_margin="12dp"
+        android:padding="5dp"
+        android:textColorHint="@color/Gray"
+        android:hint="Parola"
+        android:textColor="@color/Black"
+        android:id="@+id/password_et2"
+        android:layout_height="wrap_content"/>
 
     <androidx.cardview.widget.CardView
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:id="@+id/login_cv"
+        android:id="@+id/signup_cv"
         android:layout_gravity="right"
         app:cardBackgroundColor="@color/Orange"
         app:cardCornerRadius="5dp"
         app:cardElevation="5dp">
 
         <TextView
-            android:text="Giriş Yap"
+            android:text="Kaydol"
             android:gravity="center"
             android:padding="5dp"
             android:layout_width="match_parent"
@@ -65,18 +75,18 @@
 
     </androidx.cardview.widget.CardView>
 
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:id="@+id/register_cv"
+        android:id="@+id/login_cv_back"
+        android:layout_gravity="right"
         app:cardBackgroundColor="@color/Orange"
         app:cardCornerRadius="5dp"
         app:cardElevation="5dp">
 
         <TextView
-            android:text="Hesabın yok mu? Hemen Kayıt Ol"
+            android:text="Zaten hesabım var"
             android:gravity="center"
             android:padding="5dp"
             android:layout_width="match_parent"
@@ -85,30 +95,6 @@
             android:textColor="@color/White"
             android:textSize="20dp"
             android:textStyle="bold"></TextView>
-
-    </androidx.cardview.widget.CardView>
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:id="@+id/google_login_cv"
-        app:cardBackgroundColor="@color/Orange"
-        app:cardCornerRadius="5dp"
-        app:cardElevation="5dp">
-
-        <TextView
-            android:text="Google ile Giriş Yap"
-            android:gravity="center"
-            android:padding="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:textColor="@color/White"
-            android:textSize="20dp"
-            android:textStyle="bold"></TextView>
-
 
     </androidx.cardview.widget.CardView>
 
