@@ -4,14 +4,16 @@ import android.media.Image;
 
 public class Film {
 
-    public int filmImage_id;
+    public String filmImage_id;
     public String film_name;
     public String director_name;
     public String producer_name;
     public String releaseDate;
     public String[] movie_cast;
+    String film_id;
 
-    public Film(int filmImage_id, String film_name, String director_name, String producer_name, String releaseDate, String[] movie_cast) {
+    public Film(String film_id, String filmImage_id, String film_name, String director_name, String producer_name, String releaseDate, String[] movie_cast) {
+        this.film_id = film_id;
         this.filmImage_id = filmImage_id;
         this.film_name = film_name;
         this.director_name = director_name;
@@ -20,11 +22,19 @@ public class Film {
         this.movie_cast = movie_cast;
     }
 
-    public int getFilmImage_id() {
+    public String getFilm_id() {
+        return film_id;
+    }
+
+    public void setFilm_id(String film_id) {
+        this.film_id = film_id;
+    }
+
+    public String getFilmImage_id() {
         return filmImage_id;
     }
 
-    public void setFilmImage_id(int filmImage_id) {
+    public void setFilmImage_id(String filmImage_id) {
         this.filmImage_id = filmImage_id;
     }
 

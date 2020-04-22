@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FilmContent {
-
+/*
     Film a_film = new Film(R.drawable.asd, "A","BC","DE","10/10/2020", new String[]{"BP","AG","JJ","FR"});
     Film b_film = new Film(R.drawable.prayers_background, "B","BC","DE","10/10/2020", new String[]{"BP","AG","JJ","FR"});
     Film q_film = new Film(R.drawable.prayers_background, "B","BC","DE","10/10/2020", new String[]{"BP","AG","JJ","FR"});
@@ -62,5 +62,5 @@ public class FilmContent {
 
     public void setLove_movies(List<Film> love_movies) {
         this.love_movies = love_movies;
-    }
+    } */
 }

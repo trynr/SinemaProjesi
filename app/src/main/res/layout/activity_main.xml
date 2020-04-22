@@ -6,10 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/admin_panel_layout"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Yönetici Paneli"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:layout_margin="5dp"
+            android:textSize="24dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/add_new_film_button"
+            android:background="@color/Orange"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:layout_margin="5dp"
+            android:text="Yeni Film Ekle"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/budget_button"
+            android:background="@color/Orange"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textColor="@color/White"
+            android:text="Gelir Gider Bilgisi"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
+        android:layout_gravity="center"
         android:textColor="@color/colorAccent"
         android:textSize="25dp"
         android:text="Sinema" />

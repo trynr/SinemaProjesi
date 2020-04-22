@@ -16,7 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import static com.example.sinemaprojesi.AdminOrUserActivity.state;
+
 
 public class FirstLoginActivity extends AppCompatActivity {
 
@@ -25,6 +25,7 @@ public class FirstLoginActivity extends AppCompatActivity {
     EditText email_et, password_et;
     TextView state_tv;
     CardView login_cv, register_cv, google_login_cv;
+    public static int state;
 
 
     @Override
@@ -52,6 +53,7 @@ public class FirstLoginActivity extends AppCompatActivity {
 
             }
         };
+
 
         register_cv.setOnClickListener(new View.OnClickListener() {
             @Override

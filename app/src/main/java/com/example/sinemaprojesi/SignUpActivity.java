@@ -56,8 +56,10 @@ public class SignUpActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
-                                ref = database.getReference(mFirebaseAuth.getUid()+"/name");
+                                ref = database.getReference("Users/"+mFirebaseAuth.getUid()+"/name");
                                 ref.setValue(name);
+                                ref = database.getReference("Users/"+mFirebaseAuth.getUid()+"/state");
+                                ref.setValue(0);
 
                                 Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
 

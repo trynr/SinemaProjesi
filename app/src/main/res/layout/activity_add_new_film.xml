@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".AddNewFilmActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Film Ekleme Ekranı"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:textColor="@color/White"
+                android:id="@+id/title_add_or_edit_tv"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/film_name_et"
+                android:textColorHint="@color/White"
+                android:textColor="@color/White"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:hint="Filmin Adı"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/film_director_et"
+                android:textColorHint="@color/White"
+                android:textColor="@color/White"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:hint="Filmin Yönetmeni"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/image_upload_button"
+                android:textSize="20dp"
+                android:background="@color/Orange"
+                android:layout_margin="10dp"
+                android:text="Resim Yükle"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/new_film_image_view"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/add_film_button"
+                android:text="Filmi Ekle"
+                android:background="@color/Orange"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

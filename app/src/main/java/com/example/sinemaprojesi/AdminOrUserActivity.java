@@ -12,7 +12,6 @@ import com.google.android.material.card.MaterialCardView;
 public class AdminOrUserActivity extends AppCompatActivity {
 
     CardView admin_mtcv, user_mtcv;
-    public static int state;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +24,7 @@ public class AdminOrUserActivity extends AppCompatActivity {
         admin_mtcv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                state = 1; //Yönetici Girişi
+                //state = 1; //Yönetici Girişi
 
                 Intent intent = new Intent(AdminOrUserActivity.this, FirstLoginActivity.class);
                 startActivity(intent);
@@ -35,7 +34,7 @@ public class AdminOrUserActivity extends AppCompatActivity {
         user_mtcv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                state = 0; //Müşteri Girişi
+                //state = 0; //Müşteri Girişi
 
                 Intent intent = new Intent(AdminOrUserActivity.this, FirstLoginActivity.class);
                 startActivity(intent);

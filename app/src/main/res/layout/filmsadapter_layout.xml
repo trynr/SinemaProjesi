@@ -9,20 +9,41 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="100dp"
+        android:layout_width="200dp"
+        android:gravity="center"
         android:id="@+id/film_image"
-        android:layout_height="100dp">
-    </ImageView>
+        android:layout_height="200dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:id="@+id/film_name"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:textSize="16dp"
+        android:layout_margin="3dp"
         android:layout_height="wrap_content"></TextView>
 
     <TextView
         android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_margin="3dp"
+        android:textColor="@color/White"
+        android:textSize="16dp"
+        android:gravity="center"
         android:id="@+id/film_director_tv"
         android:layout_height="wrap_content"></TextView>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:text="Düzenle"
+        android:id="@+id/edit_button"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:background="@color/Orange"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
