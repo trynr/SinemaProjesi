@@ -8,16 +8,39 @@
     android:layout_height="match_parent"
     tools:context=".FirstLoginActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:id="@+id/state_tv"
-        android:layout_marginBottom="40dp"
-        android:gravity="center"
-        android:text="Login Activity"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="@color/White"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:textSize="18dp"
+            android:text="Müşteri Girişi"
+            android:id="@+id/customer_login_button"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@color/Gray"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@color/Gray"
+            android:textColor="@color/White"
+            android:textSize="18dp"
+            android:text="Yönetici Girişi"
+            android:id="@+id/admin_login_button"
+            android:layout_height="wrap_content"></Button>
+
+
+    </LinearLayout>
+
+
 
     <EditText
         android:layout_width="match_parent"
@@ -34,6 +57,7 @@
         android:layout_width="match_parent"
         android:background="@color/White"
         android:layout_margin="12dp"
+        android:inputType="textPassword"
         android:padding="5dp"
         android:textColor="@color/Black"
         android:textColorHint="@color/Gray"
@@ -88,29 +112,6 @@
 
     </androidx.cardview.widget.CardView>
 
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:id="@+id/google_login_cv"
-        app:cardBackgroundColor="@color/Orange"
-        app:cardCornerRadius="5dp"
-        app:cardElevation="5dp">
-
-        <TextView
-            android:text="Google ile Giriş Yap"
-            android:gravity="center"
-            android:padding="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:textColor="@color/White"
-            android:textSize="20dp"
-            android:textStyle="bold"></TextView>
-
-
-    </androidx.cardview.widget.CardView>
 
 
 

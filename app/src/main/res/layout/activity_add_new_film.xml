@@ -28,6 +28,21 @@
                 android:layout_margin="10dp"
                 android:layout_height="wrap_content"/>
 
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/image_upload_button"
+                android:textSize="20dp"
+                android:background="@color/Orange"
+                android:layout_margin="10dp"
+                android:text="Resim Yükle"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/new_film_image_view"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"/>
+
 
             <EditText
                 android:layout_width="match_parent"
@@ -51,20 +66,242 @@
                 android:layout_margin="10dp"
                 android:layout_height="wrap_content"/>
 
-            <Button
+            <EditText
                 android:layout_width="match_parent"
-                android:id="@+id/image_upload_button"
+                android:id="@+id/film_writer_et"
+                android:textColorHint="@color/White"
+                android:textColor="@color/White"
                 android:textSize="20dp"
-                android:background="@color/Orange"
+                android:padding="5dp"
+                android:hint="Filmin Yapımcısı"
                 android:layout_margin="10dp"
-                android:text="Resim Yükle"
                 android:layout_height="wrap_content"/>
 
-            <ImageView
+            <EditText
                 android:layout_width="match_parent"
-                android:id="@+id/new_film_image_view"
+                android:id="@+id/film_release_date_et"
+                android:textColorHint="@color/White"
+                android:textColor="@color/White"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:hint="Filmin Çıkış Tarihi"
                 android:layout_margin="10dp"
                 android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Aksiyon"
+                    android:textColor="@color/White"
+                    android:textSize="15dp"
+                    android:padding="3dp"
+                    android:background="@color/Gray"
+                    android:textStyle="bold"
+                    android:id="@+id/action_film_button"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Aşk"
+                    android:textColor="@color/White"
+                    android:textSize="15dp"
+                    android:padding="3dp"
+                    android:background="@color/Gray"
+                    android:textStyle="bold"
+                    android:id="@+id/love_film_button"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Çocuk"
+                    android:textColor="@color/White"
+                    android:textSize="15dp"
+                    android:id="@+id/child_film_button"
+                    android:padding="3dp"
+                    android:textStyle="bold"
+                    android:background="@color/Gray"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/White"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:background="@color/Gray"
+                    android:text="Gerilim"
+                    android:id="@+id/thriller_film_button"
+                    android:padding="3dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cast_1_Et"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:hint="Oyuncu 1"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/castcharacter_1_Et"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:hint="Karakter 1"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cast_2_Et"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:hint="Oyuncu 2"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/castcharacter_2_Et"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:hint="Karakter 2"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cast_3_Et"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:hint="Oyuncu 3"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/castcharacter_3_Et"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:hint="Karakter 3"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cast_4_Et"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:hint="Oyuncu 4"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/castcharacter_4_Et"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:hint="Karakter 4"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cast_5_Et"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:hint="Oyuncu 5"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/castcharacter_5_Et"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:hint="Karakter 5"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cast_6_Et"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:hint="Oyuncu 6"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/castcharacter_6_Et"
+                    android:textColorHint="@color/White"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:hint="Karakter 6"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
 
 
             <Button

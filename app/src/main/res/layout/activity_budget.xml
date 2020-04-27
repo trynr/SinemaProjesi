@@ -8,54 +8,56 @@
     tools:context=".BudgetActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="300dp">
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="300dp">
 
-        <LinearLayout
-            android:layout_width="275dp"
-            android:orientation="vertical"
+    <LinearLayout
+        android:layout_width="275dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Gelirler"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/White"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/income_listview"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:text="Gelirler"
-                android:textSize="24dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="8dp"
-                android:textColor="@color/White"
-                android:layout_height="wrap_content"/>
+        </androidx.recyclerview.widget.RecyclerView>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:id="@+id/income_listview"
-                android:layout_height="wrap_content">
-
-            </androidx.recyclerview.widget.RecyclerView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:id="@+id/total_income_tv"
-                android:text="Toplam Gelir\t"
-                android:textColor="@color/White"
-                android:textStyle="bold"
-                android:layout_margin="5dp"
-                android:textSize="18dp"
-                android:layout_height="wrap_content"/>
-
-        </LinearLayout>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:id="@+id/add_income_button"
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/total_income_tv"
+            android:text="Toplam Gelir\t"
             android:textColor="@color/White"
             android:textStyle="bold"
-            android:textSize="16dp"
-            android:layout_gravity="center"
-            android:text="Gelir Ekle"
+            android:layout_margin="5dp"
+            android:textSize="18dp"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/add_income_button"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:background="@color/Orange"
+        android:text="Gelir Ekle"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -100,6 +102,8 @@
         <Button
             android:layout_width="wrap_content"
             android:id="@+id/add_outcome_button"
+            android:background="@color/Orange"
+            android:padding="5dp"
             android:textColor="@color/White"
             android:textStyle="bold"
             android:layout_gravity="center"

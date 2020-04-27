@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:304498583779:android:d2e3303f416f74cf323dd6",
         "android_client_info": {
-          "package_name": "com.example.sinemaprojesi"
+          "package_name": "com.odev.sinemaprojesi"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "304498583779-15dr8ver313ha761m8n44j9g1mgvkgf7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.sinemaprojesi",
+            "package_name": "com.odev.sinemaprojesi",
             "certificate_hash": "88312e6f0bd81893323c2c797bb6c2ab25091224"
           }
         },

@@ -45,6 +45,7 @@
         android:layout_width="match_parent"
         android:background="@color/White"
         android:layout_margin="12dp"
+        android:inputType="textPassword"
         android:padding="5dp"
         android:textColorHint="@color/Gray"
         android:hint="Parola"

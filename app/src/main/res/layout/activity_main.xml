@@ -50,6 +50,19 @@
             android:layout_gravity="center"
             android:layout_height="wrap_content"/>
 
+        Sq<Button
+            android:layout_width="wrap_content"
+            android:id="@+id/employees_button"
+            android:background="@color/Orange"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textColor="@color/White"
+            android:text="Çalışan Bilgileri"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
     </LinearLayout>
 
 
@@ -77,7 +90,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/White"
                 android:text="Aksiyon Filmleri"
+                android:gravity="center"
                 android:layout_height="wrap_content">
             </TextView>
 
@@ -92,6 +108,9 @@
                 android:layout_width="match_parent"
                 android:textSize="24dp"
                 android:text="Çocuk Filmleri"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/White"
                 android:layout_height="wrap_content">
             </TextView>
 
@@ -106,6 +125,9 @@
                 android:layout_width="match_parent"
                 android:textSize="24dp"
                 android:text="Aşk Filmleri"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/White"
                 android:layout_height="wrap_content">
             </TextView>
 
@@ -116,9 +138,24 @@
                 android:layout_height="wrap_content">
             </androidx.recyclerview.widget.RecyclerView>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="24dp"
+                android:text="Gerilim Filmleri"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_margin="2dp"
+                android:id="@+id/thrillerMoviesRecView"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
         </LinearLayout>
-
-
 
     </ScrollView>
 

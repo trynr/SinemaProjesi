@@ -46,4 +46,16 @@
         android:background="@color/Orange"
         android:layout_height="wrap_content"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:text="Sil"
+        android:id="@+id/delete_button"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:background="@color/Orange"
+        android:layout_height="wrap_content"/>
+
 </LinearLayout>
