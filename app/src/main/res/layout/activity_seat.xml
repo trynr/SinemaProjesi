@@ -6,26 +6,26 @@
     android:background="@color/White"
     android:padding="5dp"
     android:layout_height="match_parent"
-    tools:context=".ChooseSeatFragment">
+    tools:context=".SeatActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-            <HorizontalScrollView
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
                 android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/seat_container_layout"
                 android:layout_height="wrap_content">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:id="@+id/seat_container_layout"
-                    android:layout_height="wrap_content">
 
+            </LinearLayout>
 
-                </LinearLayout>
-
-            </HorizontalScrollView>
+        </HorizontalScrollView>
     </ScrollView>
 
 

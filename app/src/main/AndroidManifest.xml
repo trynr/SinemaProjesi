@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.odev.sinemaprojesi">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,22 +12,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
-        <activity android:name=".EmployeesActivity"></activity>
-        <activity android:name=".GetEmployeeInfoFromDatabase" />
-        <activity android:name=".LauncherActivity">
+        <activity android:name=".OperationSuccessActivity"></activity>
+        <activity android:name=".SeatActivity" />
+        <activity android:name=".GetDataActivities.GetTicketInfoActivity" />
+        <activity android:name=".EmployeesActivity" />
+        <activity android:name=".GetDataActivities.GetEmployeeInfoFromDatabase" />
+        <activity android:name=".LauncherActivity" />
+        <activity android:name=".GetDataActivities.GetBudgetInfoFromDatabase" />
+        <activity android:name=".BudgetActivity" />
+        <activity android:name=".TicketActivity" />
+        <activity android:name=".GetDataActivities.GetInfoFromDatabaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GetBudgetInfoFromDatabase" />
-        <activity android:name=".BudgetActivity" />
-        <activity android:name=".TicketActivity" />
-        <activity android:name=".GetInfoFromDatabaseActivity" />
         <activity android:name=".AddNewFilmActivity" />
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".FirstLoginActivity"></activity>
+        <activity android:name=".FirstLoginActivity" />
         <activity android:name=".MainActivity" />
     </application>
 
